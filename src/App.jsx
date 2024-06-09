@@ -13,8 +13,8 @@ const [questions , setQuestions]=useState(data)
     <div className="container">
       <h3>سوالات</h3>
       <div> 
-        {questions.map((question)=>{
-        return <Questions {...question}/>
+        {questions.map((question, index)=>{
+        return <Questions  key={index} {...question}/>
       } ) 
         }
       </div>
